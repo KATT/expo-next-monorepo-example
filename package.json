@@ -6,13 +6,11 @@
     "patch-package": "^6.4.7"
   },
   "workspaces": [
-    "packages/app",
-    "packages/expo",
-    "packages/next"
+    "packages/*"
   ],
   "scripts": {
     "start": "cd packages/expo && yarn start:expo",
-    "dev": "cd packages/next && yarn dev",
+    "dev": "cd packages/nextjs && yarn dev",
     "build": "cd packages/next && yarn build",
     "deploy": "vercel --prod --no-clipboard",
     "postinstall": "patch-package"
