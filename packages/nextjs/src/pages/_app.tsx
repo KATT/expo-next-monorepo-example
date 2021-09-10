@@ -2,8 +2,8 @@ import { httpBatchLink } from '@trpc/client/links/httpBatchLink';
 import { loggerLink } from '@trpc/client/links/loggerLink';
 import { withTRPC } from '@trpc/next';
 import { AppType } from 'next/dist/shared/lib/utils';
-import type { AppRouter } from '@api/routers/app';
 import superjson from 'superjson';
+import { AppRouter } from 'utils/trpc';
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
